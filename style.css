@@ -14,14 +14,39 @@
   box-sizing: border-box;
   font-family: Mulish;
 }
+.btn-primary {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  background: var(--primary-color);
+  padding: 14px 35px;
+  border: none;
+  border-radius: 8px;
+}
 
+.section-title {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.section-descrption {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+/* header styles */
+header {
+  max-width: 82%;
+  margin: 0 auto;
+}
 /* nav styles */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 50px auto;
-  max-width: 82%;
+  gap: 30px;
 }
 nav .menu-icon {
   display: none;
@@ -49,11 +74,11 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  margin-right: 40px;
+  padding-left: 40px;
 }
 nav ul li a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: var(--Dark-02);
 }
@@ -61,15 +86,252 @@ nav ul li:first-child a {
   color: var(--primary-color);
 }
 
+/* banner section style */
+.banner {
+  text-align: center;
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("Images/Group 13 (1) (1).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 560px;
+  border-radius: 1rem;
+}
+.banner .banner-title {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
+  padding-top: 160px;
+}
+.banner .banner-description {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  max-width: 50%;
+  margin: 20px auto;
+}
+.banner form {
+  max-width: 60%;
+  border-radius: 8px;
+  background: #ffffff5b;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 50px;
+}
+.banner input {
+  width: 20%;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+  outline: none;
+  color: rgba(19, 19, 24, 0.5);
+}
+.banner select {
+  width: 20%;
+  border: none;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  background: #fff;
+  outline: none;
+  color: rgba(19, 19, 24, 0.5);
+}
+
+/* main style */
+main {
+  max-width: 82%;
+  margin: 0 auto;
+}
+
+/* our popular section style */
+.our-popular {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin: 100px 0;
+}
+.our-popular-content {
+  max-width: 50%;
+}
+.our-popular-content h3 {
+  margin-bottom: 20px;
+}
+.our-popular-content ul {
+  margin-left: 20px;
+  margin: 20px;
+}
+.our-popular-content button {
+  margin-top: 20px;
+}
+.our-popular-content li {
+  margin: 20px 0;
+}
+.our-popular img {
+  width: 100%;
+}
+
+/* choose your destination section style */
+.choose-destination-content {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.choose-destination-content p {
+  max-width: 60%;
+  margin: 20px auto;
+}
+
+.choose-destnation-images {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "mal mal mal mal mal mal indo indo indo indo indo  indo"
+    "sril sril sril sril norA norA norA norA norA kash kash kash"
+    "bang bang bang bang bang banb banb banb banb banb banb banb";
+}
+.maldives {
+  grid-area: mal;
+}
+.indonesia {
+  grid-area: indo;
+}
+.srilanka {
+  grid-area: sril;
+}
+.north-america {
+  grid-area: norA;
+}
+.kashmir {
+  grid-area: kash;
+}
+.bangladesh {
+  grid-area: bang;
+}
+.bandarban {
+  grid-area: banb;
+}
+.destination-img {
+  position: relative;
+}
+/* .kashmir img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+} */
+.destination-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+.destination-img p {
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
 /* responsive style */
-@media screen and (max-width: 500px) {
+/* mobile devices */
+@media screen and (max-width: 600px) {
   nav ul {
     display: none;
   }
   nav .menu-icon {
     display: block;
   }
-  nav {
+  nav,
+  .banner {
     max-width: 90%;
+  }
+  .banner .banner-title {
+    padding-top: 30px;
+    font-size: 1.5rem;
+  }
+  .banner .banner-description {
+    max-width: 90%;
+    margin: 10px;
+  }
+  .banner form {
+    flex-direction: column;
+    gap: 16px;
+    padding: 30px;
+    max-width: 90%;
+  }
+  .banner form .form-inputs {
+    width: 100%;
+    padding: 20px;
+  }
+  .banner button {
+    padding: 20px;
+  }
+  .our-popular {
+    flex-direction: column;
+  }
+  .our-popular-content {
+    max-width: 100%;
+  }
+  main {
+    max-width: 80%;
+  }
+  .choose-destnation-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .destination-img img {
+    width: 100%;
+  }
+  .choose-destination-content p {
+    max-width: 100%;
+  }
+}
+
+/* tablet and medium devices */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  nav ul li {
+    padding-left: 10px;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+  .banner .banner-title {
+    padding-top: 30px;
+    font-size: 3rem;
+  }
+  .banner form {
+    flex-direction: column;
+    gap: 16px;
+    padding: 30px;
+    max-width: 90%;
+  }
+  .banner form .form-inputs {
+    width: 100%;
+    padding: 20px;
+  }
+  .banner .banner-description {
+    max-width: 90%;
+    margin: 10px;
+  }
+  main {
+    max-width: 100%;
+  }
+  .our-popular {
+    flex-direction: column;
+  }
+  .our-popular-content {
+    max-width: 100%;
   }
 }
