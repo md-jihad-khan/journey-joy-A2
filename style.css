@@ -190,7 +190,7 @@ main {
 
 .choose-destnation-images {
   display: grid;
-  gap: 10px;
+  gap: 20px;
   grid-template-areas:
     "mal mal mal mal mal mal indo indo indo indo indo  indo"
     "sril sril sril sril norA norA norA norA norA kash kash kash"
@@ -220,12 +220,7 @@ main {
 .destination-img {
   position: relative;
 }
-/* .kashmir img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-} */
+
 .destination-img img {
   object-fit: cover;
   width: 100%;
