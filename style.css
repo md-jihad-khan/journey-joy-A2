@@ -237,6 +237,136 @@ main {
   font-weight: 800;
 }
 
+/* why choose use section style */
+.why-choose-us {
+  margin: 100px 0;
+}
+.why-choose-us h3 {
+  text-align: center;
+}
+.why-choose-us > p {
+  max-width: 60%;
+  margin: 30px auto;
+  text-align: center;
+}
+.why-choose-us-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  max-width: 47%;
+  padding: 20px;
+  border-radius: 16px;
+}
+.card .card-title {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 28px 0;
+}
+.card .card-description {
+  color: #5a5a5d;
+  font-weight: 400;
+  line-height: 26px;
+}
+.card-1 {
+  background: rgba(251, 181, 99, 0.05);
+  border: 1px solid rgba(251, 181, 99, 0.2);
+}
+.card-2 {
+  background: rgba(41, 206, 246, 0.05);
+  border: 1px solid rgba(41, 206, 246, 0.2);
+}
+.card-3 {
+  background: rgba(233, 68, 68, 0.05);
+  border: 1px solid rgba(233, 68, 68, 0.2);
+}
+/* deal and discount section style */
+.deals-discount h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.deals-discount > p {
+  max-width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.deal-card {
+  background-image: url("Images/Group 39.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 560px;
+  border-radius: 1rem;
+  position: relative;
+}
+.card-content {
+  position: absolute;
+  right: 56px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 50%;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 50px;
+  justify-content: left;
+}
+.card-time {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+.card-time i {
+  color: var(--primary-color);
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 16px 0;
+}
+.card-description {
+  color: #5a5a5d;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.card-price {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.deal-card-2 {
+  background-image: url("Images/Group 40.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 560px;
+  border-radius: 1rem;
+  position: relative;
+  margin: 30px 0;
+}
+.card-content-2 {
+  position: absolute;
+  left: 56px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 50%;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 50px;
+  justify-content: left;
+}
+
 /* responsive style */
 /* mobile devices */
 @media screen and (max-width: 600px) {
@@ -292,6 +422,26 @@ main {
   .choose-destination-content p {
     max-width: 100%;
   }
+  .card {
+    max-width: 100%;
+  }
+  .why-choose-us > p {
+    max-width: 90%;
+  }
+  .card-content,
+  .card-content-2 {
+    top: auto;
+    bottom: 15px;
+    left: 50%;
+    transform: translateY(0%);
+    transform: translateX(-50%);
+    padding: 20px;
+    max-width: 80%;
+    width: 80%;
+  }
+  .deals-discount > p {
+    max-width: 100%;
+  }
 }
 
 /* tablet and medium devices */
@@ -321,12 +471,22 @@ main {
     margin: 10px;
   }
   main {
-    max-width: 100%;
+    max-width: 90%;
   }
   .our-popular {
     flex-direction: column;
   }
   .our-popular-content {
+    max-width: 100%;
+  }
+  .card-content,
+  .card-content-2 {
+    right: 56px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 80%;
+  }
+  .deals-discount > p {
     max-width: 100%;
   }
 }
