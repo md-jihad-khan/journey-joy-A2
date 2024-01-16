@@ -472,6 +472,49 @@ main {
   font-size: 2rem;
   font-weight: 800;
 }
+
+/* footer section style */
+footer {
+  background: rgba(19, 19, 24, 0.05);
+  margin-top: 100px;
+  text-align: center;
+}
+.footer-content {
+  padding: 100px 0;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.footer-title {
+  display: flex;
+  justify-content: center;
+}
+.footer-description {
+  color: #5a5a5d;
+  text-align: center;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+footer .social a {
+  font-size: 1.5rem;
+  padding: 5px;
+  color: #131318;
+}
+footer hr {
+  border: 1px solid rgba(19, 19, 24, 0.1);
+  margin: 30px 0;
+}
+
+.allright-reserved {
+  color: #131318;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 /* responsive style */
 /* mobile devices */
 @media screen and (max-width: 600px) {
@@ -553,6 +596,9 @@ main {
   .deals-discount > p {
     max-width: 100%;
   }
+  .footer-content {
+    max-width: 80%;
+  }
 }
 
 /* tablet and medium devices */
@@ -585,12 +631,15 @@ main {
     max-width: 90%;
   }
   .our-popular,
-  .perfect-place {
+  .perfect-place,
+  .newsletter {
     flex-direction: column;
   }
   .our-popular-content,
   .perfect-place-content,
-  .perfect-place img {
+  .perfect-place img,
+  .newsletter-content,
+  .newsletter-img {
     max-width: 100%;
   }
   .card-content,
