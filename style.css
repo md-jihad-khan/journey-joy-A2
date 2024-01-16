@@ -150,6 +150,33 @@ main {
   margin: 0 auto;
 }
 
+/* our most visited place */
+.our-most-visited-place {
+  text-align: center;
+  margin-top: 100px;
+}
+.most-visited-description {
+  max-width: 70%;
+  margin: 20px auto;
+}
+.most-visited-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.visited-card img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.visited-card {
+  padding: 10px;
+  border-radius: 16px;
+  transition: 0.5s ease-in-out;
+}
+.visited-card:hover {
+  transform: scale(1.1);
+}
 /* our popular section style */
 .our-popular {
   display: flex;
@@ -464,12 +491,12 @@ main {
 .discount p {
   color: #fff;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2vw;
   font-weight: 400;
 }
 .discount h4 {
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.5vw;
   font-weight: 800;
 }
 
@@ -564,6 +591,10 @@ footer hr {
   main {
     max-width: 80%;
   }
+  .most-visited-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   .choose-destnation-images {
     display: flex;
     flex-direction: column;
@@ -595,6 +626,13 @@ footer hr {
   }
   .deals-discount > p {
     max-width: 100%;
+  }
+
+  .discount p {
+    font-size: 2vw;
+  }
+  .discount h4 {
+    font-size: 4vw;
   }
   .footer-content {
     max-width: 80%;
@@ -629,6 +667,11 @@ footer hr {
   }
   main {
     max-width: 90%;
+  }
+  .most-visited-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
   .our-popular,
   .perfect-place,
